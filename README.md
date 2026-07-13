@@ -208,4 +208,4 @@ npx skills add jackbauerxu/operating-aip-content-system
 | [Doocs/MD](https://github.com/doocs/md) | [Doocs / doocs](https://github.com/doocs) | 人工视觉编辑与私有化编辑器路线 |
 | [WeWrite](https://github.com/imraywang/wewrite) | [imraywang](https://github.com/imraywang) | 受控使用的选题、写作、复盘等非发布模块 |
 
-`cangjie-skill` 是本项目开发时采用过的提炼与验证流程工具，并未作为 1.0 的运行时依赖整合；小红书生产 Skills 也明确延后，不属于本版本范围。逐项许可、使用边界和来源版本见 [第三方说明](THIRD_PARTY_NOTICES.md) 与 [更新策略](UPDATE_POLICY.md)。
+逐项许可、使用边界和来源版本见 [第三方说明](THIRD_PARTY_NOTICES.md) 与 [更新策略](UPDATE_POLICY.md)。
