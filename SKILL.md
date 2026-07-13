@@ -134,4 +134,4 @@ The task is complete only when the relevant records exist:
 
 ## Attribution
 
-This original integration adapts architecture from `wechat-aip-architect` and coordinates bounded use of `dbskill`, `codex-workflow-builder`, `codex-remotion-daily-video`, `md2wechat`, `gzh-design`, Doocs/MD, and WeWrite. It does not copy their full instructions or component libraries. See [third-party notices](THIRD_PARTY_NOTICES.md) for licences and use boundaries.
+This original integration, maintained by `jackbauerxu`, adapts architecture from `wechat-aip-architect` and coordinates bounded use of `dbskill`, `codex-workflow-builder`, `codex-remotion-daily-video`, `md2wechat`, `gzh-design`, Doocs/MD, and WeWrite. It does not copy their full instructions or component libraries. See [third-party notices](THIRD_PARTY_NOTICES.md) for the project-by-project public maintainer, licence, and use-boundary record.
