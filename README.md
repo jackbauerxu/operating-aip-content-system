@@ -84,6 +84,17 @@ npx skills add jackbauerxu/operating-aip-content-system
 - 不把 AccessToken、AppSecret、API Key 或其他凭据写入 Markdown、截图、仓库或 HTML。
 - 不承诺阅读、涨粉、收入、推荐、转化或平台资格；需要时以当前官方来源和账户真实数据为准。
 
+## 自动更新与版本检查
+
+仓库包含一个每周运行、也可手动触发的 GitHub Actions 工作流。它会检查本账号 4 个公开 Skill 仓库中的 9 个 Skill 文件，并核验本系统依赖的上游公开项目提交。
+
+- 若 Skill 文件或上游提交变动，工作流只更新 `upstream-lock.json` 并自动创建一个 PR，写明变化来源。
+- 你的 `codex-workflow-builder`、`codex-remotion-daily-video` 和 `workbuddy-xhs-skills` 是各自的源头仓库，工作流只报告版本，不猜测外部上游或覆盖内容。
+- AIP 系统对外部 Skill 采用“人工审阅后整合”策略：上游更新不会被直接复制进本 Skill，以免产生许可、功能冲突或发布安全问题。
+- GitHub Action 只写入本仓库，绝不使用跨仓库令牌改写其他项目。
+
+详见 [更新策略](UPDATE_POLICY.md)。
+
 ## 仓库结构
 
 ```text
