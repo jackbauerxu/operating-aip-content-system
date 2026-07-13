@@ -191,4 +191,21 @@ npx skills add jackbauerxu/operating-aip-content-system
 
 ## 来源与许可边界
 
-本仓库的原创整合部分采用 [MIT License](LICENSE)。它协调或改编上游方法，不复制上游完整指令、主题库或组件库；使用上游能力时仍须遵守其许可与商业条款，详见 [第三方说明](THIRD_PARTY_NOTICES.md)。
+本仓库的原创整合与维护者为 [jackbauerxu](https://github.com/jackbauerxu)，原创整合部分采用 [MIT License](LICENSE)。它协调或改编上游方法，不复制上游完整指令、主题库或组件库；使用上游能力时仍须遵守其许可与商业条款。
+
+### 1.0 融合来源与公开维护者
+
+下表的“公开维护者”按上游 GitHub 仓库所有者/组织标注；它用于明确致谢与溯源，不把这些上游的全部代码、指令或组件宣称为本仓库内容。
+
+| 上游项目 | 公开维护者 | 1.0 中保留的能力 |
+| --- | --- | --- |
+| [wechat-aip-architect](https://github.com/chenjin-cmd/wechat-aip-architect) | [Chen / chenjin-cmd](https://github.com/chenjin-cmd) | AIP 定位、对标、内容架构与安全底线 |
+| [dbskill](https://github.com/dontbesilent2025/dbskill) | [dontbesilent / dontbesilent2025](https://github.com/dontbesilent2025) | 可选的诊断、对标与编辑模块 |
+| [codex-workflow-builder](https://github.com/jackbauerxu/codex-workflow-builder) | [jackbauerxu](https://github.com/jackbauerxu) | 可重复任务的 Workflow Contract 与运行手册 |
+| [codex-remotion-daily-video](https://github.com/jackbauerxu/codex-remotion-daily-video) | [jackbauerxu](https://github.com/jackbauerxu) | 经过验证后的视频 JSON、组件与渲染检查路线 |
+| [md2wechat-skill](https://github.com/geekjourneyx/md2wechat-skill) | [geekjourneyx](https://github.com/geekjourneyx) | Markdown 转换、预览，以及获得明确授权后的草稿路线 |
+| [gzh-design-skill](https://github.com/isjiamu/gzh-design-skill) | [isjiamu](https://github.com/isjiamu) | 精致、可人工粘贴的公众号 HTML 路线 |
+| [Doocs/MD](https://github.com/doocs/md) | [Doocs / doocs](https://github.com/doocs) | 人工视觉编辑与私有化编辑器路线 |
+| [WeWrite](https://github.com/imraywang/wewrite) | [imraywang](https://github.com/imraywang) | 受控使用的选题、写作、复盘等非发布模块 |
+
+`cangjie-skill` 是本项目开发时采用过的提炼与验证流程工具，并未作为 1.0 的运行时依赖整合；小红书生产 Skills 也明确延后，不属于本版本范围。逐项许可、使用边界和来源版本见 [第三方说明](THIRD_PARTY_NOTICES.md) 与 [更新策略](UPDATE_POLICY.md)。
