@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "tracked_repositories": [
+    {
+      "repository": "jackbauerxu/workbuddy-xhs-skills",
+      "mode": "source-of-truth",
+      "skills": [
+        "wb-xhs-account-profile/SKILL.md",
+        "wb-xhs-humanize-compliance/SKILL.md",
+        "wb-xhs-low-follower-pattern/SKILL.md",
+        "wb-xhs-monetization-backsolve/SKILL.md",
+        "wb-xhs-schedule-review/SKILL.md",
+        "wb-xhs-topic-bank/SKILL.md"
+      ]
+    },
+    {
+      "repository": "jackbauerxu/codex-workflow-builder",
+      "mode": "source-of-truth",
+      "skills": ["SKILL.md"]
+    },
+    {
+      "repository": "jackbauerxu/codex-remotion-daily-video",
+      "mode": "source-of-truth",
+      "skills": ["codex-remotion-daily-video/SKILL.md"]
+    },
+    {
+      "repository": "jackbauerxu/operating-aip-content-system",
+      "mode": "integration",
+      "skills": ["SKILL.md"]
+    }
+  ],
+  "upstreams": [
+    {
+      "repository": "chenjin-cmd/wechat-aip-architect",
+      "integration_policy": "review-only",
+      "reason": "AIP architecture is adapted rather than vendored."
+    },
+    {
+      "repository": "dontbesilent2025/dbskill",
+      "integration_policy": "review-only",
+      "reason": "Optional upstream modules retain their CC BY-NC 4.0 terms."
+    },
+    {
+      "repository": "jackbauerxu/codex-workflow-builder",
+      "integration_policy": "review-only",
+      "reason": "The AIP system routes to this sibling source-of-truth Skill."
+    },
+    {
+      "repository": "jackbauerxu/codex-remotion-daily-video",
+      "integration_policy": "review-only",
+      "reason": "The AIP system routes to this sibling source-of-truth Skill."
+    },
+    {
+      "repository": "geekjourneyx/md2wechat-skill",
+      "integration_policy": "review-only",
+      "reason": "Formatting automation is optional and has a separate Source Available License."
+    },
+    {
+      "repository": "isjiamu/gzh-design-skill",
+      "integration_policy": "review-only",
+      "reason": "Agent design output is optional and retains AGPL-3.0 obligations."
+    },
+    {
+      "repository": "doocs/md",
+      "integration_policy": "review-only",
+      "reason": "Manual editor and optional SVG route; no component library is vendored."
+    },
+    {
+      "repository": "imraywang/wewrite",
+      "integration_policy": "review-only",
+      "reason": "Only selected non-publishing modules are routed in version 1.0."
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "tracked_repositories": [
+    {
+      "commit": "4e045f893189a7d2efea3e55c44694ae17215cad",
+      "mode": "source-of-truth",
+      "repository": "jackbauerxu/workbuddy-xhs-skills",
+      "skills": [
+        {
+          "blob_sha": "dcb84ace95baccad09bd242fddea5f39e5c7ab76",
+          "path": "wb-xhs-account-profile/SKILL.md"
+        },
+        {
+          "blob_sha": "c958f4a641c47dff2ec2bfe83e31792a1c6c3d4e",
+          "path": "wb-xhs-humanize-compliance/SKILL.md"
+        },
+        {
+          "blob_sha": "db554473eacaddf6e618d6122befee0c8fd3ec32",
+          "path": "wb-xhs-low-follower-pattern/SKILL.md"
+        },
+        {
+          "blob_sha": "98cd63bcba6db60748304d044b03e095e9a24525",
+          "path": "wb-xhs-monetization-backsolve/SKILL.md"
+        },
+        {
+          "blob_sha": "bfe811aa0fecfc20a21b0a39e898ecfb0d1491a5",
+          "path": "wb-xhs-schedule-review/SKILL.md"
+        },
+        {
+          "blob_sha": "80f10a21937aea91dda670dcdce574f28cceb51a",
+          "path": "wb-xhs-topic-bank/SKILL.md"
+        }
+      ]
+    },
+    {
+      "commit": "f855b844742d815587a0a5e840479f4d7e9d4131",
+      "mode": "source-of-truth",
+      "repository": "jackbauerxu/codex-workflow-builder",
+      "skills": [
+        {
+          "blob_sha": "6d752c4d00b181dc0fd724234351f27caf472a97",
+          "path": "SKILL.md"
+        }
+      ]
+    },
+    {
+      "commit": "cce5cc5e74f1fb8afc8d1c0a3971fd7cc83fd809",
+      "mode": "source-of-truth",
+      "repository": "jackbauerxu/codex-remotion-daily-video",
+      "skills": [
+        {
+          "blob_sha": "32daaa03f33f0d6c9bc2b34a5c7d5c272c179bc9",
+          "path": "codex-remotion-daily-video/SKILL.md"
+        }
+      ]
+    },
+    {
+      "commit": "c69a4b9fc2f61a1824e5aa3e8422f0100803c289",
+      "mode": "integration",
+      "repository": "jackbauerxu/operating-aip-content-system",
+      "skills": [
+        {
+          "blob_sha": "20532c6d3edd3f3e73d5075b3fabcb06a90f2dbb",
+          "path": "SKILL.md"
+        }
+      ]
+    }
+  ],
+  "upstreams": [
+    {
+      "commit": "439f9cb7b4ec8e174b99ef3c970449ecb885afc7",
+      "integration_policy": "review-only",
+      "reason": "AIP architecture is adapted rather than vendored.",
+      "repository": "chenjin-cmd/wechat-aip-architect"
+    },
+    {
+      "commit": "1f5ac939237e20961b92132b64a5f8f47769e9d4",
+      "integration_policy": "review-only",
+      "reason": "Optional upstream modules retain their CC BY-NC 4.0 terms.",
+      "repository": "dontbesilent2025/dbskill"
+    },
+    {
+      "commit": "f855b844742d815587a0a5e840479f4d7e9d4131",
+      "integration_policy": "review-only",
+      "reason": "The AIP system routes to this sibling source-of-truth Skill.",
+      "repository": "jackbauerxu/codex-workflow-builder"
+    },
+    {
+      "commit": "cce5cc5e74f1fb8afc8d1c0a3971fd7cc83fd809",
+      "integration_policy": "review-only",
+      "reason": "The AIP system routes to this sibling source-of-truth Skill.",
+      "repository": "jackbauerxu/codex-remotion-daily-video"
+    },
+    {
+      "commit": "ae7dfe3f264a78266dd92c3c0c272c7d5fbb5bd4",
+      "integration_policy": "review-only",
+      "reason": "Formatting automation is optional and has a separate Source Available License.",
+      "repository": "geekjourneyx/md2wechat-skill"
+    },
+    {
+      "commit": "ba1f4175519b481cb3566616c9e5178705067904",
+      "integration_policy": "review-only",
+      "reason": "Agent design output is optional and retains AGPL-3.0 obligations.",
+      "repository": "isjiamu/gzh-design-skill"
+    },
+    {
+      "commit": "73593b38620b592c745855b869e2b15e1a998ca9",
+      "integration_policy": "review-only",
+      "reason": "Manual editor and optional SVG route; no component library is vendored.",
+      "repository": "doocs/md"
+    },
+    {
+      "commit": "83d2a66f8da78f6555b1629751979267a6a1cda9",
+      "integration_policy": "review-only",
+      "reason": "Only selected non-publishing modules are routed in version 1.0.",
+      "repository": "imraywang/wewrite"
+    }
+  ]
+}
