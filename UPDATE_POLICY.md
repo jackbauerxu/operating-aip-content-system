@@ -17,6 +17,12 @@ The scheduled workflow checks all configured commits and Skill-file blob identif
 
 This gives every update a visible source, commit, and affected Skill path. It can run safely without a cross-repository personal token.
 
+## What is automatic at task runtime
+
+When a task invokes a declared external program or package, the Skill checks its current version against the latest stable compatible release. A missing or outdated project dependency is installed or updated automatically in the project environment, followed by a version check and minimal diagnostic. This applies to the selected video, HTML, browser, converter, and renderer tools, not to unrelated software.
+
+The runtime gate prefers a repository lockfile and project-local installation. Network downloads and system-level changes still use the environment's approval mechanism. The host Codex application itself is not silently replaced; if it cannot be updated from the current environment, the workflow reports that handoff instead.
+
 ## What remains human-reviewed
 
 The workflow never copies upstream Skill instructions into this repository, overwrites a sibling Skill, creates a WeChat draft, or modifies a local Codex installation. Those actions can change functionality, permissions, or publishing behavior and require a deliberate compatibility review.
