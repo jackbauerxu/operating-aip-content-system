@@ -26,6 +26,19 @@ Classify the request before creating deliverables:
 
 Do not force a full system on a one-off request. Mark missing information as an assumption, `needs-evidence`, or `needs-human-decision`; never invent it.
 
+### 0.5 Runtime bootstrap and latest-stable update gate
+
+When the selected route invokes an external program, package, browser runtime, API client, converter, or renderer, environment preparation is required before production:
+
+1. Detect the current version and the latest stable supported version for every tool needed by the selected route.
+2. If a tool is missing or outdated, install or update it automatically before continuing. Prefer the project's package manager, lockfile, and project-local environment.
+3. For video routes, check the required Node.js packages, Remotion or HyperFrames runtime, browser/compositor, and FFmpeg. For article and HTML routes, check the selected `md2wechat`, `gzh-design`, Doocs/MD, or fallback tool instead of assuming it is available.
+4. Run a post-install version check and a minimal diagnostic or preview. Do not report an artifact as complete until the selected tool actually produces the expected output.
+5. Network downloads and system-level installs must use the environment's approval mechanism. Never use `sudo`, overwrite unrelated global tools, expose credentials, or update a publishing integration without explicit authorization.
+6. If an update changes platform behavior, permissions, licensing, or publication behavior, stop for human review. If setup fails, stop before production and report the exact tool, failed action, and next safe step.
+
+Text-only positioning, evidence, or planning tasks do not trigger unnecessary installation. "Latest" means the latest stable compatible release, not an unverified prerelease.
+
 ### 1. Define the account promise
 
 Read or create `account/AIP_BRIEF.md` using [contracts](references/contracts.md). Capture:
