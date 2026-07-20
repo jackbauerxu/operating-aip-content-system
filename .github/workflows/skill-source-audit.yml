@@ -47,8 +47,26 @@ jobs:
           git add upstream-lock.json
           git commit -m "chore: audit skill source versions"
           git push origin "$branch"
-          gh pr create \
+
+          pr_body="Automated source audit detected changed commits or Skill files. Review the updated lock before integrating any upstream behavior."
+          pr_url="https://github.com/${{ github.repository }}/pull/new/$branch"
+
+          if gh pr create \
             --base main \
             --head "$branch" \
             --title "chore: review updated Skill sources" \
-            --body "Automated source audit detected changed commits or Skill files. Review the updated lock before integrating any upstream behavior."
+            --body "$pr_body"; then
+            echo "Created review pull request for $branch."
+          else
+            {
+              echo "### Skill source audit update"
+              echo
+              echo "The audit pushed a review branch, but this repository does not currently allow GitHub Actions to create pull requests."
+              echo
+              echo "- Branch: \`$branch\`"
+              echo "- Manual PR link: $pr_url"
+              echo
+              echo "This is non-blocking: the source-audit branch exists and can be reviewed manually."
+            } >> "$GITHUB_STEP_SUMMARY"
+            echo "::warning::Could not create pull request automatically. Open manually: $pr_url"
+          fi
