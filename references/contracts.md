@@ -90,6 +90,13 @@
 - Reader receives a usable method, decision, or stated limit:
 - Personal story serves the topic rather than displacing it:
 - Claims match the source ledger:
+- Publish precheck: candidate scan completed:
+- Publish precheck: semantic review completed:
+- Publish precheck conclusion: ready-to-publish | needs-revision | hold:
+- Must-change items and replacement text:
+- Suggested-change items:
+- Human decisions still needed:
+- Post-repair recheck covers title, summary, body, image text, citations, links, action prompt, rights, and evidence state:
 - Benchmark structure was transformed:
 - No unsupported earnings, performance, or product claim:
 - One final HTML lane is selected:

@@ -25,7 +25,7 @@
 | --- | --- |
 | 新账号或定位不清 | AIP Brief、账号承诺、首批验证动作 |
 | 一个新选题 | 内容证据包、状态与缺失证据 |
-| 已有证据的文章 | 审核过的 Markdown、文章审核记录 |
+| 已有证据的文章 | 经过发布前审的 Markdown、文章审核记录和改后复检结果 |
 | 适合视频的母题 | 视频交接包、样片或模板路线建议 |
 | 已审核文章的排版 | 一份发布路线交接单、唯一 HTML 输出 |
 | 重复内容栏目 | Workflow Contract、运行手册、人工检查点 |
@@ -70,6 +70,7 @@
    → 2. 建立内容证据包
    → 3. 选择生产路线
    → 4. 制作文章或视频
+   → 4.5 发布前审、保意修复与改后复检
    → 5. 选择唯一排版路线并人工决定发布
    → 6. 根据真实数据复盘一条规则
 ```
@@ -100,7 +101,8 @@
 | 流程会重复 | 先用 `codex-workflow-builder` 建 Workflow Contract |
 | 新的视频栏目或结构尚未验证 | 先做 1–3 个 HyperFrames 样片 |
 | 已验证且会重复的视频格式 | 使用 `codex-remotion-daily-video` 建 JSON、组件和渲染检查 |
-| 已锁定 Markdown，需要自动转换或可能建草稿 | 选择 `md2wechat` 路线 |
+| 已锁定 Markdown，需要判断能否进入排版 | 先做 publish-precheck，再选择唯一 HTML 路线 |
+| 已锁定 Markdown，需要自动转换或可能建草稿 | 通过预审后选择 `md2wechat` 路线 |
 | 已锁定 Markdown，需要精致、人工粘贴的 HTML | 选择 `gzh-design` 路线 |
 | 需要手工视觉编辑或私有化编辑器 | 仅在明确要求时选 Doocs/MD |
 
@@ -108,6 +110,7 @@
 
 - **文章**从证据包写成 Markdown：开头是已验证的结果、价值、痛点或诚实好奇；正文给出方法、判断或限制；故事只在能解释读者问题时出现。
 - **视频**从同一证据包生成视频交接包：独立定义钩子、核心张力、镜头、字幕、素材权利和审核点；不要机械缩短文章。
+- **发布前审**先做候选扫描，再按上下文、来源、权利和行动引导做语义复核；候选命中不等于违规，零命中也不等于安全。修复后必须复检，不能用谐音、拆字或图片藏字规避审核。
 
 ### 5. 排版与发布：一篇文章只能有一个最终 HTML 生产者
 
@@ -193,9 +196,23 @@ npx skills add jackbauerxu/operating-aip-content-system
 - [AIP 架构](references/aip-architecture.md)：六阶段方法论与长期安全底线。
 - [交付契约](references/contracts.md)：Brief、证据包、对标、视频和发布交接模板。
 - [排版路线](references/publishing-lanes.md)：四条互斥的最终 HTML 路线。
+- [发布前审协议](references/publish-precheck.md)：公众号文章的两层预审、保意修复、复检和输出合同。
 - [更新策略](UPDATE_POLICY.md)：公开 Skill 和上游项目的版本审计与人工整合规则。
 
 每周自动审计会记录本账号公开 Skill 仓库及已声明上游的版本变化；它只更新版本锁定并发起审阅 PR，不会跨仓库覆盖内容或修改本地 Codex 安装。
+
+### 2026-08-01 发布前审融合
+
+本次正确融合目标是 `jackbauerxu/operating-aip-content-system`，不是另一个账号技能包仓库。新增的发布前审位于内容证据包与唯一 HTML 排版路线之间：
+
+- 判断公众号文章的商业属性、敏感主题、证据、引用、版权、隐私、链接和行动引导；
+- 采用“候选扫描 → 语义复核”，不把关键词命中当作最终违规，也不把零命中当作安全证明；
+- 按“披露/声明 → 补证据 → 收窄断言 → 最小改写 → 删除或暂缓”保留原意修复；
+- 修改后复检标题、摘要、正文、图片文字、链接、行动引导、权利和证据包状态；
+- 输出 `ready-to-publish / needs-revision / hold`，并明确必须改、建议改、待人工决定和复检结果；
+- 不把来源仓库面向抖音、小红书、微信视频号的专属规则冒充成微信公众号官方规则，也不提供绕审技巧。
+
+来源：[yuwen-cool/yuwen-publish-precheck](https://github.com/yuwen-cool/yuwen-publish-precheck)，锁定提交 `c3ac407d01198638f9fcac6fc9ee31acdf96bb51`，许可为 CC BY-NC 4.0 及来源仓库附加条款；本仓库只做方法转译与署名。
 
 ## 来源与许可边界
 
@@ -215,5 +232,6 @@ npx skills add jackbauerxu/operating-aip-content-system
 | [gzh-design-skill](https://github.com/isjiamu/gzh-design-skill) | [isjiamu](https://github.com/isjiamu) | 精致、可人工粘贴的公众号 HTML 路线 |
 | [Doocs/MD](https://github.com/doocs/md) | [Doocs / doocs](https://github.com/doocs) | 人工视觉编辑与私有化编辑器路线 |
 | [WeWrite](https://github.com/imraywang/wewrite) | [imraywang](https://github.com/imraywang) | 受控使用的选题、写作、复盘等非发布模块 |
+| [yuwen-publish-precheck](https://github.com/yuwen-cool/yuwen-publish-precheck) | [yuwen-cool](https://github.com/yuwen-cool) | 两层发布前审、保意修复和改后复检方法；不复制规则库，不把其平台专属规则当作公众号规则 |
 
 逐项许可、使用边界和来源版本见 [第三方说明](THIRD_PARTY_NOTICES.md) 与 [更新策略](UPDATE_POLICY.md)。

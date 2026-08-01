@@ -1,6 +1,6 @@
 ---
 name: operating-aip-content-system
-description: "Use when a creator needs a repeatable, evidence-led WeChat Official Account AIP content system: clarify positioning, turn verified source material into WeChat articles and template-ready short-video handoffs, choose one safe publishing lane, or build a recurring reviewable workflow. Start with an AIP Brief and content evidence packet; do not use for Xiaohongshu production, one-off copy edits, or automatic publishing."
+description: "Use when a creator needs a repeatable, evidence-led WeChat Official Account AIP content system: clarify positioning, turn verified source material into WeChat articles and template-ready short-video handoffs, precheck whether an article can proceed to formatting, repair claims without changing meaning, choose one safe publishing lane, or build a recurring reviewable workflow. Trigger phrases include publish precheck, can this article be published, 合规检查, 发布前审, 能不能发, 改成能发. Start with an AIP Brief and content evidence packet; do not use for Xiaohongshu production, one-off copy edits, or automatic publishing."
 ---
 
 # Operating AIP Content System
@@ -94,6 +94,16 @@ Write Markdown only from a `ready` packet:
 
 Transform any benchmark through a different audience, context, evidence, and voice. Without original proof, keep the work as research rather than publishing a near-copy.
 
+#### 4.5 Publish precheck before formatting
+
+Before selecting an HTML lane, read [the publish-precheck protocol](references/publish-precheck.md) and review the whole publication surface: title, summary, Markdown, image text, citations, links, action prompt, commercial relationship, asset rights, and the evidence packet.
+
+1. Confirm the identity of this publication: WeChat Official Account article, commercial/partner content or personal sharing, regulated or sensitive topic, and any external action requested.
+2. Run a **candidate scan** for absolute claims, guaranteed income/effect, unsupported numbers or cases, undisclosed commercial relationships, privacy/copyright issues, external directing, and title–summary–body mismatch.
+3. Perform **semantic review** against the source ledger, access dates, asset rights, audience, context, and intended action. A candidate hit is a review lead, not a verdict; zero hits is not a safety certificate. The source project does not supply WeChat Official Account-specific rules, so current platform or industry questions require current primary-source verification.
+4. Repair in this order: disclosure/statement → evidence → narrower claim → minimal rewrite → delete or hold. Refuse homophones, pinyin, split characters, hidden text, or any other review-evasion request.
+5. Recheck after repair. Record `ready-to-publish`, `needs-revision`, or `hold`, with must-change, suggested-change, human-decision, replacement text, and recheck result. Do not advance to an HTML lane when the evidence packet is still `needs-evidence` or `needs-human-decision`.
+
 #### Video
 
 Create `content/video-handoffs/YYYY-MM-DD-slug.json` from the same packet, not by shortening the article. Include lane, hook, core tension, claims with evidence, scenes, captions, visual assets and rights, duration, human review point, and output path.
@@ -103,6 +113,8 @@ Use a manual editor for footage-first or one-off work. For a template-friendly l
 ### 5. Select exactly one final HTML lane
 
 Read [publishing lanes](references/publishing-lanes.md), then write the publishing-lane handoff. Start only from locked, human-reviewed Markdown.
+
+The precheck is a gate before the lane, not a second renderer. It never uploads, creates a draft, or publishes by itself.
 
 - Do not pass HTML or inline styles from one renderer into another renderer.
 - `md2wechat` must run `inspect` and meet the relevant readiness target before any upload or draft action.
@@ -143,8 +155,9 @@ The task is complete only when the relevant records exist:
 - [AIP architecture](references/aip-architecture.md): six-stage strategy and safety bottom lines.
 - [Contracts](references/contracts.md): Brief, evidence packet, benchmark, topic, article-review, publishing, and video templates.
 - [Publishing lanes](references/publishing-lanes.md): final HTML route selection and prohibited combinations.
+- [Publish-precheck protocol](references/publish-precheck.md): two-layer review, evidence-preserving repair, and post-repair recheck for WeChat articles.
 - [Update policy](UPDATE_POLICY.md): source-version monitoring and review-only integration.
 
 ## Attribution
 
-This original integration, maintained by `jackbauerxu`, adapts architecture from `wechat-aip-architect` and coordinates bounded use of `dbskill`, `codex-workflow-builder`, `codex-remotion-daily-video`, `md2wechat`, `gzh-design`, Doocs/MD, and WeWrite. It does not copy their full instructions or component libraries. See [third-party notices](THIRD_PARTY_NOTICES.md) for the project-by-project public maintainer, licence, and use-boundary record.
+This original integration, maintained by `jackbauerxu`, adapts architecture from `wechat-aip-architect` and coordinates bounded use of `dbskill`, `codex-workflow-builder`, `codex-remotion-daily-video`, `md2wechat`, `gzh-design`, Doocs/MD, WeWrite, and the publish-precheck method from `yuwen-publish-precheck`. It does not copy their full instructions, rule libraries, or component libraries. See [third-party notices](THIRD_PARTY_NOTICES.md) for the project-by-project public maintainer, licence, and use-boundary record.

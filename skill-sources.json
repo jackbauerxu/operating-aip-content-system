@@ -69,6 +69,11 @@
       "repository": "imraywang/wewrite",
       "integration_policy": "review-only",
       "reason": "Only selected non-publishing modules are routed in version 1.0."
+    },
+    {
+      "repository": "yuwen-cool/yuwen-publish-precheck",
+      "integration_policy": "review-only",
+      "reason": "Publish-precheck method is adapted for the WeChat article gate; platform-specific rules are not treated as WeChat Official Account rules."
     }
   ]
 }

@@ -4,6 +4,8 @@
 
 Start with locked, human-reviewed Markdown. Choose the smallest lane that fulfils the request and record it in the publishing-lane handoff. Never pass final HTML or inline styles from one lane through another lane.
 
+Before choosing a lane, complete [the publish-precheck protocol](publish-precheck.md). A precheck result is a review record, not an HTML renderer; it cannot approve a draft, upload assets, or publish on its own.
+
 | Lane | Use when | Required checks | Endpoint |
 | --- | --- | --- | --- |
 | `md2wechat` automation | Repeatable conversion, local preview, or an explicitly requested WeChat draft | `inspect`, relevant readiness target, validation of any temporary layout copy, local preview | HTML; upload/draft only after explicit current-task approval |

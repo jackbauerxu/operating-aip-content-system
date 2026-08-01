@@ -18,5 +18,6 @@ The maintainer field below records the public GitHub repository owner or organis
 | [gzh-design-skill](https://github.com/isjiamu/gzh-design-skill) | [isjiamu](https://github.com/isjiamu) | Agent-designed pasteable HTML | AGPL-3.0; do not copy its components here. |
 | [Doocs/MD](https://github.com/doocs/md) | [Doocs / doocs](https://github.com/doocs) | Human visual editor and optional SVG tool | WTFPL; use according to the upstream project. |
 | [WeWrite](https://github.com/imraywang/wewrite) | [imraywang](https://github.com/imraywang) | Optional modular content intelligence | MIT; this integration does not use its root auto-publish pipeline. |
+| [yuwen-publish-precheck](https://github.com/yuwen-cool/yuwen-publish-precheck) | [yuwen-cool](https://github.com/yuwen-cool) | Two-layer candidate scan, semantic review, evidence-preserving repair, and post-repair recheck before the WeChat article lane | CC BY-NC 4.0 with the upstream project's additional terms; method-only adaptation, no copied rule library, and no claim that its Douyin/Xiaohongshu/Video Account rules are WeChat Official Account rules. |
 
-The project does **not** integrate `cangjie-skill` or the deferred Xiaohongshu production skills in version 1.0.
+The project does **not** integrate `cangjie-skill` or the deferred Xiaohongshu production skills in version 1.0. The `yuwen-publish-precheck` integration is limited to its review method and remains subject to the upstream licence and additional terms.
