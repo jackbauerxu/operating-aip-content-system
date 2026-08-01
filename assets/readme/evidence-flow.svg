@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+  <title id="title">AIP evidence-first workflow</title>
+  <desc id="desc">A content idea moves through evidence, the smallest production route, human review, and a measured learning loop.</desc>
+  <rect width="1200" height="280" rx="24" fill="#f8f6f1"/>
+  <g font-family="ui-sans-serif,system-ui,sans-serif">
+    <g transform="translate(42 58)"><rect width="196" height="140" rx="16" fill="#dceee8"/><text x="20" y="34" font-size="12" letter-spacing="2" fill="#257b70">01</text><text x="20" y="76" font-family="Georgia,serif" font-size="24" fill="#1d3235">Locate</text><text x="20" y="108" font-size="13" fill="#5c6c6e">person · value · scene</text></g>
+    <g transform="translate(272 58)"><rect width="196" height="140" rx="16" fill="#e6e5d0"/><text x="20" y="34" font-size="12" letter-spacing="2" fill="#7b774c">02</text><text x="20" y="76" font-family="Georgia,serif" font-size="24" fill="#1d3235">Prove</text><text x="20" y="108" font-size="13" fill="#5c6c6e">sources · rights · gaps</text></g>
+    <g transform="translate(502 58)"><rect width="196" height="140" rx="16" fill="#f5dfc8"/><text x="20" y="34" font-size="12" letter-spacing="2" fill="#b56b42">03</text><text x="20" y="76" font-family="Georgia,serif" font-size="24" fill="#1d3235">Produce</text><text x="20" y="108" font-size="13" fill="#5c6c6e">article · video · HTML</text></g>
+    <g transform="translate(732 58)"><rect width="196" height="140" rx="16" fill="#d9e5ec"/><text x="20" y="34" font-size="12" letter-spacing="2" fill="#39708a">04</text><text x="20" y="76" font-family="Georgia,serif" font-size="24" fill="#1d3235">Review</text><text x="20" y="108" font-size="13" fill="#5c6c6e">one route · human decision</text></g>
+    <g transform="translate(962 58)"><rect width="196" height="140" rx="16" fill="#1d3235"/><text x="20" y="34" font-size="12" letter-spacing="2" fill="#ffbd76">05</text><text x="20" y="76" font-family="Georgia,serif" font-size="24" fill="#fbfaf6">Learn</text><text x="20" y="108" font-size="13" fill="#b9c9c8">one evidence-based rule</text></g>
+  </g>
+  <g fill="none" stroke="#b56b42" stroke-width="2"><path d="M238 128h28M468 128h28M698 128h28M928 128h28"/><path d="m252 121 12 7-12 7M482 121l12 7-12 7M712 121l12 7-12 7M942 121l12 7-12 7"/></g>
+</svg>
