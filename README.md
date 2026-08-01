@@ -6,9 +6,13 @@
 
 它的核心不是替你自动发文，而是让每一篇文章和每条视频都从同一份**内容证据包**出发：先知道为谁服务、凭什么可信、哪些素材可用、还缺什么，再决定写作、视频和排版。
 
+![01 · FIRST IMPRESSION：AIP 内容证据台](assets/readme/section-why.svg)
+
 ## 30 秒看懂
 
-![AIP 证据优先工作流：定位、证据、生产、审核、复盘](assets/readme/evidence-flow.svg)
+![AIP 证据优先工作流：定位、证据、生产、审核、复盘](assets/readme/workflow.svg)
+
+![AIP 内容系统项目对象展示：Brief、证据账本和发布路线](assets/readme/showcase.svg)
 
 | 如果你要做 | 最小入口 | 它不会替你做什么 |
 | --- | --- | --- |
@@ -17,6 +21,8 @@
 | 同时规划文章和视频 | 共享证据、分开成品 | 不把文章机械缩成视频 |
 | 选择公众号排版 | 唯一 HTML 生产路线 | 不让多个排版器互相覆盖 |
 | 建立重复栏目 | Workflow Contract | 不替你自动发布 |
+
+![03 · USE THE SYSTEM：让每个结论都能回到证据](assets/readme/section-use.svg)
 
 ## 它是什么
 
