@@ -2,65 +2,65 @@
   "schema_version": 1,
   "tracked_repositories": [
     {
-      "commit": "4e045f893189a7d2efea3e55c44694ae17215cad",
+      "commit": "8070632e3f31026ed00b948da12e60a9c41b6f88",
       "mode": "source-of-truth",
       "repository": "jackbauerxu/workbuddy-xhs-skills",
       "skills": [
         {
-          "blob_sha": "dcb84ace95baccad09bd242fddea5f39e5c7ab76",
+          "blob_sha": "cebb925d1cc5229c358f7989c635cb21c3e28243",
           "path": "wb-xhs-account-profile/SKILL.md"
         },
         {
-          "blob_sha": "c958f4a641c47dff2ec2bfe83e31792a1c6c3d4e",
+          "blob_sha": "da9847c0e8b06162454c6ad1cbc857589c2f6835",
           "path": "wb-xhs-humanize-compliance/SKILL.md"
         },
         {
-          "blob_sha": "db554473eacaddf6e618d6122befee0c8fd3ec32",
+          "blob_sha": "da5110730b57ac6154c20eb264fa401887b6116a",
           "path": "wb-xhs-low-follower-pattern/SKILL.md"
         },
         {
-          "blob_sha": "98cd63bcba6db60748304d044b03e095e9a24525",
+          "blob_sha": "8ef59f8bd6ddb59f4c2864da877c7e10c6a3b989",
           "path": "wb-xhs-monetization-backsolve/SKILL.md"
         },
         {
-          "blob_sha": "bfe811aa0fecfc20a21b0a39e898ecfb0d1491a5",
+          "blob_sha": "0818acc9b9ee943e83ad0b5a91041a1d81e42e86",
           "path": "wb-xhs-schedule-review/SKILL.md"
         },
         {
-          "blob_sha": "80f10a21937aea91dda670dcdce574f28cceb51a",
+          "blob_sha": "0dbf4ac95539bbf4277beaa4288bc7df40cbaaed",
           "path": "wb-xhs-topic-bank/SKILL.md"
         }
       ]
     },
     {
-      "commit": "f855b844742d815587a0a5e840479f4d7e9d4131",
+      "commit": "b20afcc3479dfd35fddf34f21e35aa31884ca3b6",
       "mode": "source-of-truth",
       "repository": "jackbauerxu/codex-workflow-builder",
       "skills": [
         {
-          "blob_sha": "6d752c4d00b181dc0fd724234351f27caf472a97",
+          "blob_sha": "971f17c75c0d3825f21563d5075d230216c851b0",
           "path": "SKILL.md"
         }
       ]
     },
     {
-      "commit": "cce5cc5e74f1fb8afc8d1c0a3971fd7cc83fd809",
+      "commit": "36b4a6ee7e66b6555580cd23ce8fc94e3e6d5c06",
       "mode": "source-of-truth",
       "repository": "jackbauerxu/codex-remotion-daily-video",
       "skills": [
         {
-          "blob_sha": "32daaa03f33f0d6c9bc2b34a5c7d5c272c179bc9",
+          "blob_sha": "b5c39b0e44ee8c2ba95f4d5d62d1940d0f260766",
           "path": "codex-remotion-daily-video/SKILL.md"
         }
       ]
     },
     {
-      "commit": "c69a4b9fc2f61a1824e5aa3e8422f0100803c289",
+      "commit": "a6b26047a476d7c6aec3d1386fd2b0c34c4f7503",
       "mode": "integration",
       "repository": "jackbauerxu/operating-aip-content-system",
       "skills": [
         {
-          "blob_sha": "20532c6d3edd3f3e73d5075b3fabcb06a90f2dbb",
+          "blob_sha": "25de635a578fe7febd0020c9b9f4ab09e1492124",
           "path": "SKILL.md"
         }
       ]
@@ -68,49 +68,49 @@
   ],
   "upstreams": [
     {
-      "commit": "439f9cb7b4ec8e174b99ef3c970449ecb885afc7",
+      "commit": "a6620eda3a8e3fd25d2e66c1e1bd3f4e6eda8db6",
       "integration_policy": "review-only",
       "reason": "AIP architecture is adapted rather than vendored.",
       "repository": "chenjin-cmd/wechat-aip-architect"
     },
     {
-      "commit": "1f5ac939237e20961b92132b64a5f8f47769e9d4",
+      "commit": "707725c8ecdffa24f5b7fba75b9bbaa89e068d75",
       "integration_policy": "review-only",
       "reason": "Optional upstream modules retain their CC BY-NC 4.0 terms.",
       "repository": "dontbesilent2025/dbskill"
     },
     {
-      "commit": "f855b844742d815587a0a5e840479f4d7e9d4131",
+      "commit": "b20afcc3479dfd35fddf34f21e35aa31884ca3b6",
       "integration_policy": "review-only",
       "reason": "The AIP system routes to this sibling source-of-truth Skill.",
       "repository": "jackbauerxu/codex-workflow-builder"
     },
     {
-      "commit": "cce5cc5e74f1fb8afc8d1c0a3971fd7cc83fd809",
+      "commit": "36b4a6ee7e66b6555580cd23ce8fc94e3e6d5c06",
       "integration_policy": "review-only",
       "reason": "The AIP system routes to this sibling source-of-truth Skill.",
       "repository": "jackbauerxu/codex-remotion-daily-video"
     },
     {
-      "commit": "ae7dfe3f264a78266dd92c3c0c272c7d5fbb5bd4",
+      "commit": "a8e2900033e5c9ee152a629e108fe57228ba31e6",
       "integration_policy": "review-only",
       "reason": "Formatting automation is optional and has a separate Source Available License.",
       "repository": "geekjourneyx/md2wechat-skill"
     },
     {
-      "commit": "ba1f4175519b481cb3566616c9e5178705067904",
+      "commit": "750a50dffdc4abb5e853b98136dad13a57e64ce3",
       "integration_policy": "review-only",
       "reason": "Agent design output is optional and retains AGPL-3.0 obligations.",
       "repository": "isjiamu/gzh-design-skill"
     },
     {
-      "commit": "73593b38620b592c745855b869e2b15e1a998ca9",
+      "commit": "0bbfe56b67d7683ad4503e7a7690af277c99c5fe",
       "integration_policy": "review-only",
       "reason": "Manual editor and optional SVG route; no component library is vendored.",
       "repository": "doocs/md"
     },
     {
-      "commit": "83d2a66f8da78f6555b1629751979267a6a1cda9",
+      "commit": "2860fbe958311fcc04009d8132908989e43e6eaa",
       "integration_policy": "review-only",
       "reason": "Only selected non-publishing modules are routed in version 1.0.",
       "repository": "imraywang/wewrite"
